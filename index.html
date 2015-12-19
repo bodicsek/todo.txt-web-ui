@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Todo.txt web UI</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Todo.txt</h1>
+                    <p style="padding:0px;"></p>
+                    <p>A simple web user interface for your <a href="http://todotxt.com/">todo.txt</a> file.</p>
+                </div>
+                <div class="hidden-xs col-sm-4">
+                    <img src="todotxt_logo_2012.png" alt="Todo.txt logo" height="160" width="160" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="selectContainer">
+                    <select class="form-control" id="pri">
+                        <option value="">Choose a priority</option>
+                        <option value="(A)">High (A)</option>
+                        <option value="(B)">Medium (B)</option>
+                        <option value="(C)">Low (C)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-7">
+                <input class="form-control" type="text" id="todo" placeholder="Your next todo item." autofocus />
+            </div>
+            <div class="col-xs-2">
+                <button class="form-control" type="submit" onclick="addNewTodoItem();">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+
+</body>
+
+</html>
