@@ -20,7 +20,7 @@ function addNewTodoItem() {
 }
 
 function prependTodoItem(htmlObject, todoItem) {
-    var newItemHtml = "<h4>" + todoItem + "</h4>";
+    var newItemHtml = '<h4 class="prepended-item">' + todoItem + '</h4>';
     var origHtml = htmlObject.html();
     htmlObject.html(newItemHtml + origHtml);
 }

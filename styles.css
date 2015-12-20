@@ -1,12 +1,15 @@
-.row-priA {
+.priA {
     color: maroon;
 }
-.row-priB {
+.priB {
     color: green;
 }
-.row-priC {
+.priC {
     color: blue;
 }
-.row-priNone {
-    margin-bottom: 20px;
+.row-bottom {
+    margin-top: 20px;
+}
+.prepended-item {
+    margin-bottom: 18px;
 }
